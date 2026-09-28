@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="neu_background">#E0E5EC</color>
+    <color name="neu_shadow_light">#FFFFFF</color>
+    <color name="neu_shadow_dark">#A3B1C6</color>
+    <color name="neu_text_primary">#2D3436</color>
+</resources>

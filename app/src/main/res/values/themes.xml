@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NeumoNote" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:colorBackground">@color/neu_background</item>
+        <item name="colorSurface">@color/neu_background</item>
+        <item name="android:textColorPrimary">@color/neu_text_primary</item>
+        <item name="colorOnSurface">@color/neu_text_primary</item>
+        <item name="colorPrimary">@color/neu_text_primary</item>
+    </style>
+
+    <style name="TextAppearance.NeumoNote.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/neu_text_primary</item>
+    </style>
+
+    <style name="TextAppearance.NeumoNote.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textColor">@color/neu_text_primary</item>
+    </style>
+</resources>
