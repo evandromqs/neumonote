@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neu_background"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp">
+
+    <ImageView
+        android:id="@+id/ivLock"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/login_lock_description"
+        android:src="@drawable/ic_lock"
+        app:layout_constraintBottom_toTopOf="@id/tvAppName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvAppName"
+        style="@style/TextAppearance.NeumoNote.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/app_name"
+        android:textColor="@color/neu_text_primary"
+        app:layout_constraintBottom_toTopOf="@id/tvInstruction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLock" />
+
+    <TextView
+        android:id="@+id/tvInstruction"
+        style="@style/TextAppearance.NeumoNote.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/login_instruction"
+        android:textColor="@color/neu_text_primary"
+        app:layout_constraintBottom_toTopOf="@id/etSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAppName" />
+
+    <EditText
+        android:id="@+id/etSenha"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_neumorphic_card"
+        android:hint="@string/login_password_hint"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:textColor="@color/neu_text_primary"
+        android:textColorHint="@color/neu_text_primary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/btnEntrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvInstruction" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_neumorphic_button"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/login_button"
+        android:textAllCaps="false"
+        android:textColor="@color/neu_text_primary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/tvMensagemErro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSenha" />
+
+    <TextView
+        android:id="@+id/tvMensagemErro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEntrar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

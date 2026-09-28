@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NeumoNote</string>
+    <string name="login_lock_description">Cadeado</string>
+    <string name="login_instruction">Digite sua senha mestra</string>
+    <string name="login_password_hint">Senha</string>
+    <string name="login_create_password_hint">Criar senha mestra</string>
+    <string name="login_button">Entrar</string>
+    <string name="login_create_button">Criar</string>
+    <string name="login_empty_password">Digite uma senha</string>
+    <string name="login_incorrect_password">Senha incorreta</string>
+</resources>

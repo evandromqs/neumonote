@@ -30,6 +30,8 @@ class CryptoManager(context: Context) {
             .apply()
     }
 
+            fun verificarSenhaExiste(): Boolean = preferences.contains(PASSWORD_HASH_KEY)
+
     fun verificarSenha(senha: String): Boolean {
         val storedHash = preferences.getString(PASSWORD_HASH_KEY, null) ?: return false
         val expectedHash = Base64.decode(storedHash, Base64.NO_WRAP)
